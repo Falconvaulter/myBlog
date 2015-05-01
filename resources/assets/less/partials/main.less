@@ -1,0 +1,53 @@
+/* Colors */
+@background-color: darkgreen;
+@navbar-background: teal;
+@navbar-text: #333;
+@navbar-hover: .5; //Used for opacity
+@light-text: #ccc;
+
+body, html {
+    background-color: @background-color;   
+}
+.navbar {
+    margin: 10px;
+    border-radius: 5px;
+    opacity: .8;
+    background-color: @navbar-background; 
+
+    border: none;
+}
+.navbar .navbar-toggle {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 7px 8px;
+    border: solid @light-text 1px;
+}
+.navbar .navbar-toggle span{
+    background: @light-text
+}
+.navbar .navbar-collapse {
+    border: none;   
+}
+.navbar .navbar-brand {
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 42px;
+	color: @light-text;
+}
+.navbar .navbar-brand,
+.navbar .navbar-nav > li > a,
+.dropdown-menu > li > a{
+    color: @navbar-text;
+    margin: 5px;
+    border-radius: 5px;
+}
+.navbar .navbar-nav > li > a:hover, 
+.navbar .navbar-nav > li > a:focus {
+    opacity: @navbar-hover;   
+}
+.dropdown-menu {
+    background: @navbar-background;
+    border:none;
+}
+.dropdown-menu > li > a:hover {
+    opacity: @navbar-hover;
+}
